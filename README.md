@@ -45,11 +45,46 @@ Looking at the results of the replicated analysis, we see similar results with F
 <figcaption align = "center"><b>Table 1: Estimates of the single-factor model using the Fama-Bliss yields.</b></figcaption> 
 <br />
 
-A. Estimates of the return-forecasting factor 
-|               | $\\gamma_0$ | $\\gamma_1$ | $\\gamma_2$ | $\\gamma_3$ | $\\gamma_4$ | $\\gamma_5$ | $R^2$ | $\\chi^2(5)$ |
-|:--------------|------------:|------------:|------------:|------------:|------------:|------------:|------:|-------------:|
-| OLS estimates | -1.19       | -1.29       | -0.34       | 1.73        | 1.19        | -1.11       |       |              |
-| NW, 18 lags   | 1.88        | 0.50        | 0.82        | 0.70        | 0.51        | 0.56        | 0.2   | 22.51        |
+<table class="table" style="font-size: 10px; ">
+ <thead>
+<tr><th style="border-bottom:hidden;padding-bottom:0; padding-left:5px;padding-right:5px;text-align: left; font-weight: bold; " colspan="9"><div style>A. Estimates of the return-forecasting factor</div></th></tr>
+  <tr>
+   <th style="text-align:left;">   </th>
+   <th style="text-align:right;"> $\gamma_0$ </th>
+   <th style="text-align:right;"> $\gamma_1$ </th>
+   <th style="text-align:right;"> $\gamma_2$ </th>
+   <th style="text-align:right;"> $\gamma_3$ </th>
+   <th style="text-align:right;"> $\gamma_4$ </th>
+   <th style="text-align:right;"> $\gamma_5$ </th>
+   <th style="text-align:right;"> $R^2$ </th>
+   <th style="text-align:right;"> $\chi^2(5)$ </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;width: 4cm; "> OLS estimates </td>
+   <td style="text-align:right;"> -1.19 </td>
+   <td style="text-align:right;"> -1.29 </td>
+   <td style="text-align:right;"> -0.34 </td>
+   <td style="text-align:right;"> 1.73 </td>
+   <td style="text-align:right;"> 1.19 </td>
+   <td style="text-align:right;"> -1.11 </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;width: 4cm; "> NW, 18 lags </td>
+   <td style="text-align:right;"> 1.88 </td>
+   <td style="text-align:right;"> 0.50 </td>
+   <td style="text-align:right;"> 0.82 </td>
+   <td style="text-align:right;"> 0.70 </td>
+   <td style="text-align:right;"> 0.51 </td>
+   <td style="text-align:right;"> 0.56 </td>
+   <td style="text-align:right;"> 0.2 </td>
+   <td style="text-align:right;"> 22.51 </td>
+  </tr>
+</tbody>
+</table>
 
 In Panel A of Table 1, the $\gamma$ values for Model (2) closely align with the calculations made by Cochrane & Piazzesi (2005), exhibiting a similar pattern. However, our analysis reveals larger Newey-West standard errors compared to the original paper. Additionally, the $\chi^2(5)$ statistic is smaller in our analysis. The $R^2$ value of 34% remains consistent with the findings of Cochrane & Piazzesi (2005).
 
