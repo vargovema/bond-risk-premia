@@ -1,36 +1,43 @@
-# bond-risk-premia
-
-# Reproduce Cochrane & Piazzesi (2005)
+# Reproducing results by Cochrane & Piazzesi (2005)
 
 The research of Cochrane & Piazzesi (2005) focuses on examining the changing patterns of expected excess bond returns over time. To investigate this, they perform regressions where we analyze the relationship between one-year excess returns and initial forward rates. The findings reveal that a single factor, represented by a tent-shaped linear combination of forward rates, effectively predicts excess returns across one-year to five-year maturity bonds.
 
 To replicate the analysis of Cochrane & Piazzesi (2005), we begin by calculating the log-yield, denoted as $y_t^{(n)}$, which is defined as $-\frac{1}{n}p_t^{(n)}$, where $p_t^{(n)}$ represents the log price of an n-year discount bond at time t. We then compute the log forward rates, denoted as $f_t^{(n)}$, given by $p_t^{(n-1)} - p_t^{(n)}$. Additionally, we need to obtain the log holding period, denoted as $r_{t+1}^{(n)}$, defined as $p_{t+1}^{(n-1)} - p_t^{(n)}$ where $p_{t+1}^{(n-1)}$ is the log price lagged by 12 months. With these calculations in place, we can determine the excess log returns, denoted as $rx_{t+1}^{(n)}$, which are obtained as $r_{t+1}^{(n)} - y_t^{(1)}$, where $y_t^{(1)}$ represents the log-yield in the first period.
 
 Next, we can compute the excess return forecasts using the unrestricted model expressed as follows:
+
 $$
 rx_{t+1}^{(n)} = \beta_0^{(n)} + \beta_1^{(n)}y_t^{(n)} + \beta_2 f_t^{(2)} + \beta_3 f_t^{(3)} + \beta_4 f_t^{(4)} + \beta_5 f_t^{(5)} + \epsilon_{t+1}^{(n)}
 $$
+
 Results of this regression are displayed in Figure 1.
 
 To impose restrictions on the model, we need to derive the $\gamma$ values by fitting the following model of the average excess return on all forward rates:
+
 $$
 \frac{1}{4}\sum_{n=2}^5 rx_{t+1}^{(n)} = \gamma_0 + \gamma_1 y_t^{(n)} + \gamma_2 f_t^{(2)} + \gamma_3 f_t^{(3)} + \gamma_4 f_t^{(4)} + \gamma_5 f_t^{(5)} + \bar \epsilon_{t+1} 
 $$
+
 $$
 \bar{rx}{t+1} = \gamma^T f_t + \bar \epsilon{t+1}
 $$
+
 Results of this regression are displayed in Panel A of Table 1.
 
 Subsequently, we can estimate the single factor restricted model by conducting four regressions for $n={2,3,4,5}$:
+
 $$
 rx_{t+1}^{(n)} = b_n (\gamma^T f_t) + \epsilon_{t+1}^{(n)}
 $$
+
 Results of this regression are displayed in Panel B of Table 1 and Figure 1.
 
 Lastly, the final model reproduced in the analysis is the Fama & Bliss (1987) excess return model, given by:
+
 $$
 rx_{t+1}^{(n)} = \alpha + \beta(f_t^{(n)}- y_t^{(1)}) + \epsilon_{t+1}^{(n)}
 $$
+
 Results of this regression are displayed in Table 2.
 
 Looking at the results of the replicated analysis, we see similar results with Fama-Bliss data from January 1964 to December 2003 as found by Cochrane & Piazzesi (2005). Figure 1 suggests a clear tent-shaped coefficients of one-year excess returns on forward rated, Model (1) and Model (4). This holds for both, unrestricted and restricted models.
@@ -81,9 +88,11 @@ According to Table 6, the Famma-Bliss regression conducted on more recent data e
 In order to evaluate out-of-sample performs of all the different models used in this analysis, we need to fit all the models once again using the data from January 1964 to $t-1$ where $t_0$ is January 2004. This means that in the first iteration, the models trained based on data from  January 1964 to December 2003 and these models are used to obtain predictions for January 2004. With this, we keep increasing t by 1 month until we can predict the most recent observation which is December 2022. 
 
 To evaluate out-of-sample performance, we calculate the $R^2$ for out-of sample performance suggested by Campbell & Thompson (2007).
+
 $$
-R_{OS}^2 = 1 - \frac{\sum_{t=1}^T (r_t - \hat r_t)^2}{\sum_{t=1}^T (r_t - \bar r_t)^2}
+R_{OS}^2 = 1 - {\sum_{t=1}^T (r_t - \hat r_t)^2}/{\sum_{t=1}^T (r_t - \bar r_t)^2}
 $$
+
 where $r_t$ is the actual observation of excess return, $\hat r_t$ is the predicted excess returns and $\bar r_t$ is the historical average excess return calculated up until $t-1$.
 
 $R_{OS}^2$ allows us to compare out-of-sample $R^2$ with the in-sample $R^2$ statistic. Positive $R_{OS}^2$ value means that "the predictive regression has lower average mean-squared prediction error than the historical average return" (Campbell & Thompson, 2007), p.1515) whereas the opposite is true from negative $R_{OS}^2$.
