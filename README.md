@@ -42,6 +42,15 @@ Results of this regression are displayed in Table 2.
 
 Looking at the results of the replicated analysis, we see similar results with Fama-Bliss data from January 1964 to December 2003 as found by Cochrane & Piazzesi (2005). Figure 1 suggests a clear tent-shaped coefficients of one-year excess returns on forward rated, Model (1) and Model (4). This holds for both, unrestricted and restricted models.
 
+<figcaption align = "center"><b>Table 1: Estimates of the single-factor model using the Fama-Bliss yields.</b></figcaption> 
+<br />
+
+A. Estimates of the return-forecasting factor 
+|               | $\\gamma_0$ | $\\gamma_1$ | $\\gamma_2$ | $\\gamma_3$ | $\\gamma_4$ | $\\gamma_5$ | $R^2$ | $\\chi^2(5)$ |
+|:--------------|------------:|------------:|------------:|------------:|------------:|------------:|------:|-------------:|
+| OLS estimates | -1.19       | -1.29       | -0.34       | 1.73        | 1.19        | -1.11       |       |              |
+| NW, 18 lags   | 1.88        | 0.50        | 0.82        | 0.70        | 0.51        | 0.56        | 0.2   | 22.51        |
+
 In Panel A of Table 1, the $\gamma$ values for Model (2) closely align with the calculations made by Cochrane & Piazzesi (2005), exhibiting a similar pattern. However, our analysis reveals larger Newey-West standard errors compared to the original paper. Additionally, the $\chi^2(5)$ statistic is smaller in our analysis. The $R^2$ value of 34% remains consistent with the findings of Cochrane & Piazzesi (2005).
 
 Moving to Panel B of Table 2, the coefficients and significant Large T values obtained for the unrestricted Model (1) are nearly identical to those proposed by Cochrane & Piazzesi (2005). The $R^2$ values for the unrestricted Model (1) are slightly higher than reported in the original paper, while being slightly lower for the restricted Model (4).
