@@ -41,6 +41,8 @@ $$
 Results of this regression are displayed in Table 2.
 
 <figcaption align = "center"><b>Figure 1: Regression coefficients of one-year excess returns on forward rates using the Fama-Bliss yields.</b></figcaption> 
+<br />
+
 ![Figure 1: Regression coefficients of one-year excess returns on forward rates using the Fama-Bliss yields.](out/reg_coeffs_1.png)
 
 Looking at the results of the replicated analysis, we see similar results with Fama-Bliss data from January 1964 to December 2003 as found by Cochrane & Piazzesi (2005). Figure 1 suggests a clear tent-shaped coefficients of one-year excess returns on forward rated, Model (1) and Model (4). This holds for both, unrestricted and restricted models.
@@ -49,6 +51,7 @@ Looking at the results of the replicated analysis, we see similar results with F
 <br />
 
 <table class="table" style="font-size: 10px; ">
+<caption style="font-size: initial !important;">Estimates of the single-factor model using the Fama-Bliss yields.</caption>
  <thead>
 <tr><th style="border-bottom:hidden;padding-bottom:0; padding-left:5px;padding-right:5px;text-align: left; font-weight: bold; " colspan="9"><div style>A. Estimates of the return-forecasting factor</div></th></tr>
   <tr>
@@ -66,25 +69,25 @@ Looking at the results of the replicated analysis, we see similar results with F
 <tbody>
   <tr>
    <td style="text-align:left;width: 4cm; "> OLS estimates </td>
-   <td style="text-align:right;"> -1.19 </td>
-   <td style="text-align:right;"> -1.29 </td>
-   <td style="text-align:right;"> -0.34 </td>
-   <td style="text-align:right;"> 1.73 </td>
-   <td style="text-align:right;"> 1.19 </td>
-   <td style="text-align:right;"> -1.11 </td>
+   <td style="text-align:right;"> -3.21 </td>
+   <td style="text-align:right;"> -2.05 </td>
+   <td style="text-align:right;"> 0.69 </td>
+   <td style="text-align:right;"> 2.94 </td>
+   <td style="text-align:right;"> 0.82 </td>
+   <td style="text-align:right;"> -2.00 </td>
    <td style="text-align:right;">  </td>
    <td style="text-align:right;">  </td>
   </tr>
   <tr>
    <td style="text-align:left;width: 4cm; "> NW, 18 lags </td>
-   <td style="text-align:right;"> 1.88 </td>
-   <td style="text-align:right;"> 0.50 </td>
-   <td style="text-align:right;"> 0.82 </td>
-   <td style="text-align:right;"> 0.70 </td>
-   <td style="text-align:right;"> 0.51 </td>
-   <td style="text-align:right;"> 0.56 </td>
-   <td style="text-align:right;"> 0.2 </td>
-   <td style="text-align:right;"> 22.51 </td>
+   <td style="text-align:right;"> 1.50 </td>
+   <td style="text-align:right;"> 0.41 </td>
+   <td style="text-align:right;"> 0.74 </td>
+   <td style="text-align:right;"> 0.63 </td>
+   <td style="text-align:right;"> 0.53 </td>
+   <td style="text-align:right;"> 0.58 </td>
+   <td style="text-align:right;"> 0.34 </td>
+   <td style="text-align:right;"> 67.2 </td>
   </tr>
 </tbody>
 </table>
@@ -140,10 +143,9 @@ In Panel A of Table 1, the $\gamma$ values for Model (2) closely align with the 
 
 Moving to Panel B of Table 2, the coefficients and significant Large T values obtained for the unrestricted Model (1) are nearly identical to those proposed by Cochrane & Piazzesi (2005). The $R^2$ values for the unrestricted Model (1) are slightly higher than reported in the original paper, while being slightly lower for the restricted Model (4).
 
-<figcaption align = "center"><b>Famma-Bliss excess return regressions using the Famma-Bliss yields.</b></figcaption> 
+<figcaption align = "center"><b>Table 2: Famma-Bliss excess return regressions using the Famma-Bliss yields.</b></figcaption> 
 <br />
 <table class="table" style="font-size: 10px; width: auto !important; margin-left: auto; margin-right: auto;">
-<caption style="font-size: initial !important;">Famma-Bliss excess return regressions using the Famma-Bliss yields.</caption>
  <thead>
   <tr>
    <th style="text-align:right;"> Maturity $n$ </th>
@@ -182,9 +184,9 @@ Moving to Panel B of Table 2, the coefficients and significant Large T values ob
 
 Table 2 suggests that our results are again in line findings of Cochrane & Piazzesi (2005). We see that the model fit, based on $R^2$ values, is worse in the Fama & Bliss (1987) model than in the single-factor model propose by Cochrane & Piazzesi (2005).
 
-# Check robustness
+# Checking robustness
 
-## Reproduce Cochrane & Piazzesi (2005) using Gürkaynak et al. (2007) yields
+## Reproducing analysis by Cochrane & Piazzesi (2005) using Gürkaynak et al. (2007) yields
 
 To verify the robustness of the results of Cochrane & Piazzesi (2005) we use Gürkaynak-Sack-Wright (GSW) yields. The GSW yields, while having their own limitations present more information than the Fama-Bliss yields. GSW provide daily yield estimates and estimates of the longest available maturities. Also, the data is being updated on a quarterly basis. 
 
@@ -192,12 +194,14 @@ GSW use a parametric method to estimate smooth yield curves. For their estimatio
 
 However, in our analysis we only utilize the same maturities as already provided by Fama & Bliss (1987).
 
-<figcaption align = "center"><b>Regression coefficients of one-year excess returns on forward rates using GSW yields.</b></figcaption> 
+<figcaption align = "center"><b>Figure 2: Regression coefficients of one-year excess returns on forward rates using GSW yields.</b></figcaption> 
+<br />
+
 ![Regression coefficients of one-year excess returns on forward rates using GSW yields.](out/reg_coeffs_2.png)
 
 When looking at Figure 2, one can immediately observe that the tent shape of the coefficients is lost. Nonetheless, a certain pattern in the coefficients can still be identified. The pattern is more pronounced in the restricted (1) model than in the unrestricted model (4).
 
-<figcaption align = "center"><b>Estimates of the single-factor model using GSW yields.</b></figcaption> 
+<figcaption align = "center"><b>Table 3: Estimates of the single-factor model using GSW yields.</b></figcaption> 
 <br />
 <table class="table" style="font-size: 10px; ">
 <caption style="font-size: initial !important;">Estimates of the single-factor model using GSW yields.</caption>
@@ -241,14 +245,60 @@ When looking at Figure 2, one can immediately observe that the tent shape of the
 </tbody>
 </table>
 
+<table class="table" style="font-size: 10px; width: auto !important; ">
+ <thead>
+<tr><th style="border-bottom:hidden;padding-bottom:0; padding-left:5px;padding-right:5px;text-align: left; font-weight: bold; " colspan="5"><div style>B. Individual Bond regressions</div></th></tr>
+<tr>
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="4"><div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">Restricted</div></th>
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1"><div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">Unrestricted</div></th>
+</tr>
+  <tr>
+   <th style="text-align:right;"> $n$ </th>
+   <th style="text-align:right;"> $b_n$ </th>
+   <th style="text-align:right;"> Large $T$ </th>
+   <th style="text-align:right;"> $R^2$ </th>
+   <th style="text-align:right;"> $R^2$ </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:right;"> 0.28 </td>
+   <td style="text-align:right;"> 0.04 </td>
+   <td style="text-align:right;"> 0.10 </td>
+   <td style="text-align:right;"> 0.12 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:right;"> 0.50 </td>
+   <td style="text-align:right;"> 0.07 </td>
+   <td style="text-align:right;"> 0.10 </td>
+   <td style="text-align:right;"> 0.14 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 4 </td>
+   <td style="text-align:right;"> 0.67 </td>
+   <td style="text-align:right;"> 0.10 </td>
+   <td style="text-align:right;"> 0.09 </td>
+   <td style="text-align:right;"> 0.15 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 5 </td>
+   <td style="text-align:right;"> 0.82 </td>
+   <td style="text-align:right;"> 0.12 </td>
+   <td style="text-align:right;"> 0.08 </td>
+   <td style="text-align:right;"> 0.17 </td>
+  </tr>
+</tbody>
+</table>
+
 Similarly to the analysis with the FB data, also in Table 3 Panel A the $\bf{\gamma}$ from Model (2) reflects the general pattern found in Figure 2. Using GSW data however yields substantially higher Newey-West corrected standard errors and also a $\chi^2(5)$ statistic of 10.46 which is below the critical value at significance level 0.05 for a one sided test (11.07). The 15\% $R^2$ is also well below the 34\% found using the FB data.
 
 In Panel B we can see that the $b_n$ increases again with maturity and the standard errors are still quite low. But unlike with the FB data the $b_n$ are generally lower and the $R^2$ is not as high either. Also, the $R^2$ are higher in the unrestricted model than in the restricted one. 
 
-<figcaption align = "center"><b>Famma-Bliss excess return regressions using GSW yields.</b></figcaption> 
+<figcaption align = "center"><b>Table 4: Famma-Bliss excess return regressions using GSW yields.</b></figcaption> 
 <br />
 <table class="table" style="font-size: 10px; width: auto !important; margin-left: auto; margin-right: auto;">
-<caption style="font-size: initial !important;">Famma-Bliss excess return regressions using GSW yields.</caption>
  <thead>
   <tr>
    <th style="text-align:right;"> Maturity $n$ </th>
@@ -290,12 +340,12 @@ Looking at Table 4 we get similar results to Fama & Bliss (1987) also with the G
 Overall, one can say that the model by Cochrane & Piazzesi (2005) improves the FB model also with the GSW data - albeit less drastically than with the FB data. That said, the expectation hypothesis can still be rejected.
 
 
-## Reproduce Cochrane & Piazzesi (2005) using recent Fama & Bliss (1987) yields 
+## Reproducing analysis by Cochrane & Piazzesi (2005) using recent Fama & Bliss (1987) yields 
 
 We again reproduce the analysis proposed by Cochrane & Piazzesi (2005) using more recent Fama-Bliss yield data from January 1964 to December 2022.
 
-<figcaption align = "center"><b>Regression coefficients of one-year excess returns on forward rates using the recent Fama-Bliss yields.</b></figcaption> 
-![Regression coefficients of one-year excess returns on forward rates using the recent Fama-Bliss yields.(out/reg_coeffs_3.png)
+<figcaption align = "center"><b>Figure 3: Regression coefficients of one-year excess returns on forward rates using the recent Fama-Bliss yields.</b></figcaption> 
+![Figure 3: Regression coefficients of one-year excess returns on forward rates using the recent Fama-Bliss yields.(out/reg_coeffs_3.png)
 
 Based on Figure 3, it appears that the conclusions drawn by Cochrane & Piazzesi (2005) may not hold for more recent Famma-Bliss data. The observed coefficients of one-year excess returns on forward rates do not exhibit a distinct tent shape, particularly for forward rates spanning years three to five. Additionally, the coefficients appear to be smaller in magnitude when compared to those depicted in Figure 1.
 
@@ -399,7 +449,6 @@ According to Table 6, the Famma-Bliss regression conducted on more recent data e
 <figcaption align = "center"><b>Table 6: Famma-Bliss excess return regressions using the recent Famma-Bliss yields.</b></figcaption> 
 <br />
 <table class="table" style="font-size: 10px; width: auto !important; margin-left: auto; margin-right: auto;">
-<caption style="font-size: initial !important;">Famma-Bliss excess return regressions using the recent Famma-Bliss yields.</caption>
  <thead>
   <tr>
    <th style="text-align:right;"> Maturity $n$ </th>
@@ -437,14 +486,12 @@ According to Table 6, the Famma-Bliss regression conducted on more recent data e
 </table>
 
 
-## Perform an out-of-sample validation using recent Fama & Bliss (1987) yields 
+## Performing an out-of-sample validation using recent Fama & Bliss (1987) yields 
 
 In order to evaluate out-of-sample performs of all the different models used in this analysis, we need to fit all the models once again using the data from January 1964 to $t-1$ where $t_0$ is January 2004. This means that in the first iteration, the models trained based on data from  January 1964 to December 2003 and these models are used to obtain predictions for January 2004. With this, we keep increasing t by 1 month until we can predict the most recent observation which is December 2022. 
 
-<figcaption align = "center"><b>Table 7: Out-of-sampe performance evaluation using $R^2_{OS,r_2}$.</b></figcaption> 
-<br />
 <table class="table" style="font-size: 9px; width: auto !important; margin-left: auto; margin-right: auto;">
-<caption style="font-size: initial !important;">Out-of-sampe performance evaluation using $R^2_{OS,r_2}$.</caption>
+<caption style="font-size: initial !important;">Table 7: Out-of-sampe performance evaluation using $R^2_{OS,r_2}$.</caption>
  <thead>
 <tr>
 <th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="9"><div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">Cochrane &amp; Piazzesi (2005) models</div></th>
@@ -546,7 +593,7 @@ To generally improve the return predictability, one could add those features to 
 -	Combining the previous suggestions with forecast combination methods. Starting with simple equal-weighted averages of different model specifications more factors can be considered.
 
 
-## Interpret the results or your analysis
+## Interpretation of the results or your analysis
 
 From an investment point of view, by the relatively high explanatory power, the model seems consistent enough to identify underpriced bond yields and make gains on the long term. Simple strategies based on the model suggest:
 
@@ -567,3 +614,24 @@ Although empirical studies have demonstrated statistical evidence supporting the
 - *Financial Stability:* The CP model's insights can help regulators assess financial stability and systemic risks. By monitoring the yield spread and its relationship with short-term interest rates, regulators can gain insights into the market's expectations and potential vulnerabilities. A widening yield spread, for example, could signal market concerns about future economic conditions or liquidity risks.
 
 # References
+
+Brooks, J., & Moskowitz, T. J. (2017). Yield curve premia. Working Paper.
+
+Campbell, J. Y., & Thompson, S. B. (2007). Predicting excess stock returns out of sample: Can anything beat the historical average? Review of Financial Studies, 21, 1509–1531.
+
+Cochrane, J., & Piazzesi, M. (2005). Bond risk premia. American Economic Review, 95, 138–160.
+
+Fama, E. F., & Bliss, Robert. R. (1987). The information in long-maturity forward rates. American Economic Review, 77, 680–692.
+
+Gürkaynak, R. S., Sack, B., & Wright, J. H. (2007). The US treasury yield curve: 1961 to the present. Journal of Monetary Economics, 54(8), 2291–2304.
+
+Kessler, S., & Scherer, B. (2009). Varying risk premia in international bond markets. Journal of Banking & Finance, 33.
+
+Lutz, F. A. (1940). The structure of interest rates. The Quarterly Journal of Economics, 55, 36–63. Randl, O., & Weiss, P. (2023). Asset and risk management: Government bonds (p. 1). 
+
+Institute for Finance, Banking; Insurance; Wirtschaftsuniversität Wien.
+
+Thornton, D. L., & Valente, G. (2012). Out-of-sample predictions of bond excess returns and forward rates: An asset allocation perspective. Review of Financial Studies, 25, 3141–3168.
+
+# Authors
+Sebastian Herzog, Peter Mikos, Marcell Tatar, Ema Vargova
