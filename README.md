@@ -40,6 +40,9 @@ $$
 
 Results of this regression are displayed in Table 2.
 
+<figcaption align = "center"><b>Figure 1: Regression coefficients of one-year excess returns on forward rates using the Fama-Bliss yields.</b></figcaption> 
+![Figure 1: Regression coefficients of one-year excess returns on forward rates using the Fama-Bliss yields.](out/reg_coeffs_1.png)
+
 Looking at the results of the replicated analysis, we see similar results with Fama-Bliss data from January 1964 to December 2003 as found by Cochrane & Piazzesi (2005). Figure 1 suggests a clear tent-shaped coefficients of one-year excess returns on forward rated, Model (1) and Model (4). This holds for both, unrestricted and restricted models.
 
 <figcaption align = "center"><b>Table 1: Estimates of the single-factor model using the Fama-Bliss yields.</b></figcaption> 
@@ -86,9 +89,96 @@ Looking at the results of the replicated analysis, we see similar results with F
 </tbody>
 </table>
 
+<table class="table" style="font-size: 10px; width: auto !important; ">
+ <thead>
+<tr><th style="border-bottom:hidden;padding-bottom:0; padding-left:5px;padding-right:5px;text-align: left; font-weight: bold; " colspan="5"><div style>B. Individual-bond regressions</div></th></tr>
+<tr>
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="4"><div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">Restricted</div></th>
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1"><div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">Unrestricted</div></th>
+</tr>
+  <tr>
+   <th style="text-align:right;"> $n$ </th>
+   <th style="text-align:right;"> $b_n$ </th>
+   <th style="text-align:right;"> Large $T$ </th>
+   <th style="text-align:right;"> $R^2$ </th>
+   <th style="text-align:right;"> $R^2$ </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:right;"> 0.47 </td>
+   <td style="text-align:right;"> 0.03 </td>
+   <td style="text-align:right;"> 0.35 </td>
+   <td style="text-align:right;"> 0.32 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:right;"> 0.87 </td>
+   <td style="text-align:right;"> 0.05 </td>
+   <td style="text-align:right;"> 0.36 </td>
+   <td style="text-align:right;"> 0.33 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 4 </td>
+   <td style="text-align:right;"> 1.24 </td>
+   <td style="text-align:right;"> 0.07 </td>
+   <td style="text-align:right;"> 0.39 </td>
+   <td style="text-align:right;"> 0.36 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 5 </td>
+   <td style="text-align:right;"> 1.43 </td>
+   <td style="text-align:right;"> 0.09 </td>
+   <td style="text-align:right;"> 0.35 </td>
+   <td style="text-align:right;"> 0.34 </td>
+  </tr>
+</tbody>
+</table>
+
 In Panel A of Table 1, the $\gamma$ values for Model (2) closely align with the calculations made by Cochrane & Piazzesi (2005), exhibiting a similar pattern. However, our analysis reveals larger Newey-West standard errors compared to the original paper. Additionally, the $\chi^2(5)$ statistic is smaller in our analysis. The $R^2$ value of 34% remains consistent with the findings of Cochrane & Piazzesi (2005).
 
 Moving to Panel B of Table 2, the coefficients and significant Large T values obtained for the unrestricted Model (1) are nearly identical to those proposed by Cochrane & Piazzesi (2005). The $R^2$ values for the unrestricted Model (1) are slightly higher than reported in the original paper, while being slightly lower for the restricted Model (4).
+
+<figcaption align = "center"><b>Famma-Bliss excess return regressions using the Famma-Bliss yields.</b></figcaption> 
+<br />
+<table class="table" style="font-size: 10px; width: auto !important; margin-left: auto; margin-right: auto;">
+<caption style="font-size: initial !important;">Famma-Bliss excess return regressions using the Famma-Bliss yields.</caption>
+ <thead>
+  <tr>
+   <th style="text-align:right;"> Maturity $n$ </th>
+   <th style="text-align:right;"> $\beta$ </th>
+   <th style="text-align:right;"> NW, 18 lags </th>
+   <th style="text-align:right;"> $R^2$ </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:right;"> 0.99 </td>
+   <td style="text-align:right;"> 0.25 </td>
+   <td style="text-align:right;"> 0.16 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:right;"> 1.34 </td>
+   <td style="text-align:right;"> 0.33 </td>
+   <td style="text-align:right;"> 0.17 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 4 </td>
+   <td style="text-align:right;"> 1.60 </td>
+   <td style="text-align:right;"> 0.38 </td>
+   <td style="text-align:right;"> 0.18 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 5 </td>
+   <td style="text-align:right;"> 1.28 </td>
+   <td style="text-align:right;"> 0.55 </td>
+   <td style="text-align:right;"> 0.09 </td>
+  </tr>
+</tbody>
+</table>
 
 Table 2 suggests that our results are again in line findings of Cochrane & Piazzesi (2005). We see that the model fit, based on $R^2$ values, is worse in the Fama & Bliss (1987) model than in the single-factor model propose by Cochrane & Piazzesi (2005).
 
@@ -102,11 +192,98 @@ GSW use a parametric method to estimate smooth yield curves. For their estimatio
 
 However, in our analysis we only utilize the same maturities as already provided by Fama & Bliss (1987).
 
+<figcaption align = "center"><b>Regression coefficients of one-year excess returns on forward rates using GSW yields.</b></figcaption> 
+![Regression coefficients of one-year excess returns on forward rates using GSW yields.](out/reg_coeffs_2.png)
+
 When looking at Figure 2, one can immediately observe that the tent shape of the coefficients is lost. Nonetheless, a certain pattern in the coefficients can still be identified. The pattern is more pronounced in the restricted (1) model than in the unrestricted model (4).
+
+<figcaption align = "center"><b>Estimates of the single-factor model using GSW yields.</b></figcaption> 
+<br />
+<table class="table" style="font-size: 10px; ">
+<caption style="font-size: initial !important;">Estimates of the single-factor model using GSW yields.</caption>
+ <thead>
+<tr><th style="border-bottom:hidden;padding-bottom:0; padding-left:5px;padding-right:5px;text-align: left; font-weight: bold; " colspan="9"><div style>A. Estimates of the return-forecasting factor</div></th></tr>
+  <tr>
+   <th style="text-align:left;">   </th>
+   <th style="text-align:right;"> $\gamma_0$ </th>
+   <th style="text-align:right;"> $\gamma_1$ </th>
+   <th style="text-align:right;"> $\gamma_2$ </th>
+   <th style="text-align:right;"> $\gamma_3$ </th>
+   <th style="text-align:right;"> $\gamma_4$ </th>
+   <th style="text-align:right;"> $\gamma_5$ </th>
+   <th style="text-align:right;"> $R^2$ </th>
+   <th style="text-align:right;"> $\chi^2(5)$ </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;width: 4cm; "> OLS estimates </td>
+   <td style="text-align:right;"> -2.02 </td>
+   <td style="text-align:right;"> -2.32 </td>
+   <td style="text-align:right;"> 4.06 </td>
+   <td style="text-align:right;"> -1.82 </td>
+   <td style="text-align:right;"> -3.38 </td>
+   <td style="text-align:right;"> 3.73 </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;width: 4cm; "> NW, 18 lags </td>
+   <td style="text-align:right;"> 3.50 </td>
+   <td style="text-align:right;"> 0.75 </td>
+   <td style="text-align:right;"> 6.43 </td>
+   <td style="text-align:right;"> 20.42 </td>
+   <td style="text-align:right;"> 26.82 </td>
+   <td style="text-align:right;"> 12.52 </td>
+   <td style="text-align:right;"> 0.15 </td>
+   <td style="text-align:right;"> 10.46 </td>
+  </tr>
+</tbody>
+</table>
 
 Similarly to the analysis with the FB data, also in Table 3 Panel A the $\bf{\gamma}$ from Model (2) reflects the general pattern found in Figure 2. Using GSW data however yields substantially higher Newey-West corrected standard errors and also a $\chi^2(5)$ statistic of 10.46 which is below the critical value at significance level 0.05 for a one sided test (11.07). The 15\% $R^2$ is also well below the 34\% found using the FB data.
 
 In Panel B we can see that the $b_n$ increases again with maturity and the standard errors are still quite low. But unlike with the FB data the $b_n$ are generally lower and the $R^2$ is not as high either. Also, the $R^2$ are higher in the unrestricted model than in the restricted one. 
+
+<figcaption align = "center"><b>Famma-Bliss excess return regressions using GSW yields.</b></figcaption> 
+<br />
+<table class="table" style="font-size: 10px; width: auto !important; margin-left: auto; margin-right: auto;">
+<caption style="font-size: initial !important;">Famma-Bliss excess return regressions using GSW yields.</caption>
+ <thead>
+  <tr>
+   <th style="text-align:right;"> Maturity $n$ </th>
+   <th style="text-align:right;"> $\beta$ </th>
+   <th style="text-align:right;"> NW, 18 lags </th>
+   <th style="text-align:right;"> $R^2$ </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:right;"> 0.76 </td>
+   <td style="text-align:right;"> 0.30 </td>
+   <td style="text-align:right;"> 0.08 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:right;"> 0.97 </td>
+   <td style="text-align:right;"> 0.40 </td>
+   <td style="text-align:right;"> 0.10 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 4 </td>
+   <td style="text-align:right;"> 1.16 </td>
+   <td style="text-align:right;"> 0.48 </td>
+   <td style="text-align:right;"> 0.11 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 5 </td>
+   <td style="text-align:right;"> 1.34 </td>
+   <td style="text-align:right;"> 0.53 </td>
+   <td style="text-align:right;"> 0.12 </td>
+  </tr>
+</tbody>
+</table>
 
 Looking at Table 4 we get similar results to Fama & Bliss (1987) also with the GSW data. Yet again, the $R^2$ values are worse in the Fama & Bliss (1987) model than in the single-factor model proposed by Cochrane & Piazzesi (2005).
 
@@ -117,19 +294,202 @@ Overall, one can say that the model by Cochrane & Piazzesi (2005) improves the F
 
 We again reproduce the analysis proposed by Cochrane & Piazzesi (2005) using more recent Fama-Bliss yield data from January 1964 to December 2022.
 
+<figcaption align = "center"><b>Regression coefficients of one-year excess returns on forward rates using the recent Fama-Bliss yields.</b></figcaption> 
+![Regression coefficients of one-year excess returns on forward rates using the recent Fama-Bliss yields.(out/reg_coeffs_3.png)
+
 Based on Figure 3, it appears that the conclusions drawn by Cochrane & Piazzesi (2005) may not hold for more recent Famma-Bliss data. The observed coefficients of one-year excess returns on forward rates do not exhibit a distinct tent shape, particularly for forward rates spanning years three to five. Additionally, the coefficients appear to be smaller in magnitude when compared to those depicted in Figure 1.
 
 In Panel A of Table 5, it is evident that the absolute values of the $\gamma$ coefficients are smaller compared to those obtained by Cochrane & Piazzesi (2005). However, the Newey-West standard errors demonstrate greater similarity to the original paper, as indicated by a significantly lower $\chi^2$ statistic of 22.51. The $R^2$ value of 20% represents a decrease of 15% compared to the original paper.
 
 Moving on to Panel B of Table 5, the coefficients and corresponding Large T values appear to align more closely with the findings of Cochrane & Piazzesi (2005). However, when utilizing a larger dataset, the $R^2$ values of both the restricted and unrestricted models experience a decrease of approximately 10%-12%.
 
+<figcaption align = "center"><b>Table 5: Estimates of the single-factor model the recent Fama-Bliss yields.</b></figcaption> 
+<br />
+<table class="table" style="font-size: 10px; ">
+<caption style="font-size: initial !important;">Estimates of the single-factor model the recent Fama-Bliss yields.</caption>
+ <thead>
+<tr><th style="border-bottom:hidden;padding-bottom:0; padding-left:5px;padding-right:5px;text-align: left; font-weight: bold; " colspan="9"><div style>A. Estimates of the return-forecasting factor</div></th></tr>
+  <tr>
+   <th style="text-align:left;">   </th>
+   <th style="text-align:right;"> $\gamma_0$ </th>
+   <th style="text-align:right;"> $\gamma_1$ </th>
+   <th style="text-align:right;"> $\gamma_2$ </th>
+   <th style="text-align:right;"> $\gamma_3$ </th>
+   <th style="text-align:right;"> $\gamma_4$ </th>
+   <th style="text-align:right;"> $\gamma_5$ </th>
+   <th style="text-align:right;"> $R^2$ </th>
+   <th style="text-align:right;"> $\chi^2(5)$ </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;width: 4cm; "> OLS estimates </td>
+   <td style="text-align:right;"> -1.19 </td>
+   <td style="text-align:right;"> -1.29 </td>
+   <td style="text-align:right;"> -0.34 </td>
+   <td style="text-align:right;"> 1.73 </td>
+   <td style="text-align:right;"> 1.19 </td>
+   <td style="text-align:right;"> -1.11 </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;width: 4cm; "> NW, 18 lags </td>
+   <td style="text-align:right;"> 1.88 </td>
+   <td style="text-align:right;"> 0.50 </td>
+   <td style="text-align:right;"> 0.82 </td>
+   <td style="text-align:right;"> 0.70 </td>
+   <td style="text-align:right;"> 0.51 </td>
+   <td style="text-align:right;"> 0.56 </td>
+   <td style="text-align:right;"> 0.2 </td>
+   <td style="text-align:right;"> 22.51 </td>
+  </tr>
+</tbody>
+</table>
+
+<table class="table" style="font-size: 10px; width: auto !important; ">
+ <thead>
+<tr><th style="border-bottom:hidden;padding-bottom:0; padding-left:5px;padding-right:5px;text-align: left; font-weight: bold; " colspan="5"><div style>B. Individual-bond regressions</div></th></tr>
+<tr>
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="4"><div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">Restricted</div></th>
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1"><div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">Unrestricted</div></th>
+</tr>
+  <tr>
+   <th style="text-align:right;"> $n$ </th>
+   <th style="text-align:right;"> $b_n$ </th>
+   <th style="text-align:right;"> Large $T$ </th>
+   <th style="text-align:right;"> $R^2$ </th>
+   <th style="text-align:right;"> $R^2$ </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:right;"> 0.45 </td>
+   <td style="text-align:right;"> 0.03 </td>
+   <td style="text-align:right;"> 0.22 </td>
+   <td style="text-align:right;"> 0.19 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:right;"> 0.85 </td>
+   <td style="text-align:right;"> 0.06 </td>
+   <td style="text-align:right;"> 0.23 </td>
+   <td style="text-align:right;"> 0.20 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 4 </td>
+   <td style="text-align:right;"> 1.25 </td>
+   <td style="text-align:right;"> 0.08 </td>
+   <td style="text-align:right;"> 0.26 </td>
+   <td style="text-align:right;"> 0.22 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 5 </td>
+   <td style="text-align:right;"> 1.45 </td>
+   <td style="text-align:right;"> 0.10 </td>
+   <td style="text-align:right;"> 0.23 </td>
+   <td style="text-align:right;"> 0.20 </td>
+  </tr>
+</tbody>
+</table>
 
 According to Table 6, the Famma-Bliss regression conducted on more recent data exhibits lower beta coefficients and lower $R^2$ values. Additionally, the Newey-West standard errors appear to be relatively consistent with those obtained in Table 2.
+
+<figcaption align = "center"><b>Table 6: Famma-Bliss excess return regressions using the recent Famma-Bliss yields.</b></figcaption> 
+<br />
+<table class="table" style="font-size: 10px; width: auto !important; margin-left: auto; margin-right: auto;">
+<caption style="font-size: initial !important;">Famma-Bliss excess return regressions using the recent Famma-Bliss yields.</caption>
+ <thead>
+  <tr>
+   <th style="text-align:right;"> Maturity $n$ </th>
+   <th style="text-align:right;"> $\beta$ </th>
+   <th style="text-align:right;"> NW, 18 lags </th>
+   <th style="text-align:right;"> $R^2$ </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:right;"> 0.79 </td>
+   <td style="text-align:right;"> 0.27 </td>
+   <td style="text-align:right;"> 0.10 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:right;"> 1.05 </td>
+   <td style="text-align:right;"> 0.31 </td>
+   <td style="text-align:right;"> 0.11 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 4 </td>
+   <td style="text-align:right;"> 1.25 </td>
+   <td style="text-align:right;"> 0.33 </td>
+   <td style="text-align:right;"> 0.12 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 5 </td>
+   <td style="text-align:right;"> 1.01 </td>
+   <td style="text-align:right;"> 0.39 </td>
+   <td style="text-align:right;"> 0.07 </td>
+  </tr>
+</tbody>
+</table>
 
 
 ## Perform an out-of-sample validation using recent Fama & Bliss (1987) yields 
 
 In order to evaluate out-of-sample performs of all the different models used in this analysis, we need to fit all the models once again using the data from January 1964 to $t-1$ where $t_0$ is January 2004. This means that in the first iteration, the models trained based on data from  January 1964 to December 2003 and these models are used to obtain predictions for January 2004. With this, we keep increasing t by 1 month until we can predict the most recent observation which is December 2022. 
+
+<figcaption align = "center"><b>Table 7: Out-of-sampe performance evaluation using $R^2_{OS,r_2}$.</b></figcaption> 
+<br />
+<table class="table" style="font-size: 9px; width: auto !important; margin-left: auto; margin-right: auto;">
+<caption style="font-size: initial !important;">Out-of-sampe performance evaluation using $R^2_{OS,r_2}$.</caption>
+ <thead>
+<tr>
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="9"><div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">Cochrane &amp; Piazzesi (2005) models</div></th>
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="4"><div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">Fama &amp; Bliss (1987) model</div></th>
+</tr>
+<tr>
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; font-weight: bold; " colspan="4"><div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">Unrestricted <br> model</div></th>
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; font-weight: bold; " colspan="1"><div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">Return-forecasting <br> factor</div></th>
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; font-weight: bold; " colspan="4"><div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">Restricted <br> model</div></th>
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; font-weight: bold; " colspan="4"><div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">Excess return <br> regressions</div></th>
+</tr>
+  <tr>
+   <th style="text-align:center;"> n=2 </th>
+   <th style="text-align:center;"> n=3 </th>
+   <th style="text-align:center;"> n=4 </th>
+   <th style="text-align:center;"> n=5 </th>
+   <th style="text-align:center;"> $\bar {rx}$ </th>
+   <th style="text-align:center;"> n=2 </th>
+   <th style="text-align:center;"> n=3 </th>
+   <th style="text-align:center;"> n=4 </th>
+   <th style="text-align:center;"> n=5 </th>
+   <th style="text-align:center;"> n=2 </th>
+   <th style="text-align:center;"> n=3 </th>
+   <th style="text-align:center;"> n=4 </th>
+   <th style="text-align:center;"> n=5 </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:center;"> -0.86 </td>
+   <td style="text-align:center;"> -0.9 </td>
+   <td style="text-align:center;"> -0.9 </td>
+   <td style="text-align:center;"> -0.79 </td>
+   <td style="text-align:center;"> -0.88 </td>
+   <td style="text-align:center;"> -0.63 </td>
+   <td style="text-align:center;"> -0.8 </td>
+   <td style="text-align:center;"> -0.94 </td>
+   <td style="text-align:center;"> -0.86 </td>
+   <td style="text-align:center;"> 0.04 </td>
+   <td style="text-align:center;"> 0.07 </td>
+   <td style="text-align:center;"> 0.08 </td>
+   <td style="text-align:center;"> 0.14 </td>
+  </tr>
+</tbody>
+</table>
 
 To evaluate out-of-sample performance, we calculate the $R^2$ for out-of sample performance suggested by Campbell & Thompson (2007).
 
