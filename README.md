@@ -1,4 +1,6 @@
-# Reproducing results by Cochrane & Piazzesi (2005)
+# Bond risk premia
+
+## Reproducing results by Cochrane & Piazzesi (2005)
 
 The research of Cochrane & Piazzesi (2005) focuses on examining the changing patterns of expected excess bond returns over time. To investigate this, they perform regressions where we analyze the relationship between one-year excess returns and initial forward rates. The findings reveal that a single factor, represented by a tent-shaped linear combination of forward rates, effectively predicts excess returns across one-year to five-year maturity bonds.
 
@@ -184,9 +186,9 @@ Moving to Panel B of Table 2, the coefficients and significant Large T values ob
 
 Table 2 suggests that our results are again in line findings of Cochrane & Piazzesi (2005). We see that the model fit, based on $R^2$ values, is worse in the Fama & Bliss (1987) model than in the single-factor model propose by Cochrane & Piazzesi (2005).
 
-# Checking robustness
+## Checking robustness
 
-## Reproducing analysis by Cochrane & Piazzesi (2005) using Gürkaynak et al. (2007) yields
+### Reproducing analysis by Cochrane & Piazzesi (2005) using Gürkaynak et al. (2007) yields
 
 To verify the robustness of the results of Cochrane & Piazzesi (2005) we use Gürkaynak-Sack-Wright (GSW) yields. The GSW yields, while having their own limitations present more information than the Fama-Bliss yields. GSW provide daily yield estimates and estimates of the longest available maturities. Also, the data is being updated on a quarterly basis. 
 
@@ -340,7 +342,7 @@ Looking at Table 4 we get similar results to Fama & Bliss (1987) also with the G
 Overall, one can say that the model by Cochrane & Piazzesi (2005) improves the FB model also with the GSW data - albeit less drastically than with the FB data. That said, the expectation hypothesis can still be rejected.
 
 
-## Reproducing analysis by Cochrane & Piazzesi (2005) using recent Fama & Bliss (1987) yields 
+### Reproducing analysis by Cochrane & Piazzesi (2005) using recent Fama & Bliss (1987) yields 
 
 We again reproduce the analysis proposed by Cochrane & Piazzesi (2005) using more recent Fama-Bliss yield data from January 1964 to December 2022.
 
@@ -486,7 +488,7 @@ According to Table 6, the Famma-Bliss regression conducted on more recent data e
 </table>
 
 
-## Performing an out-of-sample validation using recent Fama & Bliss (1987) yields 
+### Performing an out-of-sample validation using recent Fama & Bliss (1987) yields 
 
 In order to evaluate out-of-sample performs of all the different models used in this analysis, we need to fit all the models once again using the data from January 1964 to $t-1$ where $t_0$ is January 2004. This means that in the first iteration, the models trained based on data from  January 1964 to December 2003 and these models are used to obtain predictions for January 2004. With this, we keep increasing t by 1 month until we can predict the most recent observation which is December 2022. 
 
@@ -550,9 +552,9 @@ $R_{OS}^2$ allows us to compare out-of-sample $R^2$ with the in-sample $R^2$ sta
 
 Table 7 reveals that all models proposed by Cochrane & Piazzesi (2005) exhibit negative $R_{OS}^2$ values, indicating that the historical average excess return yields smaller predictive errors compared to the fitted models. On the other hand, the Fama & Bliss (1987) model demonstrates positive $R_{OS}^2$ values suggesting that the model performs slightly better on out-of-sample data compared to the historical average.
 
-# Discussion
+## Discussion
 
-## Main messages of the papers
+### Main messages of the papers
 
 The government bond market is an important asset class as it has the second-highest market capitalization among the major asset classes (Randl & Weiss, 2023, p. 1). Similar to the assignment on portfolio sorts in the equity market context, we are interested in factors which can predict future bond risk premia. Our analysis will be based on the relationship between short- and long-term bond yields. The fundamental price relation covering bond yields was majorly influenced by Lutz (1940) who argue that the anticipated gain obtained by maintaining a long-term investment in the money or capital market until it reaches maturity is equivalent to the expected return achieved by continuously renewing a sequence of short-term investments that collectively have the same overall maturity as the long-term investment. This implies the following three properties:
 
@@ -593,7 +595,7 @@ To generally improve the return predictability, one could add those features to 
 -	Combining the previous suggestions with forecast combination methods. Starting with simple equal-weighted averages of different model specifications more factors can be considered.
 
 
-## Interpretation of the results or your analysis
+### Interpretation of the results of the analysis
 
 From an investment point of view, by the relatively high explanatory power, the model seems consistent enough to identify underpriced bond yields and make gains on the long term. Simple strategies based on the model suggest:
 
@@ -613,7 +615,7 @@ Although empirical studies have demonstrated statistical evidence supporting the
 - *Monetary Policy Decisions:* The CP model's ability to predict changes in short-term interest rates can be useful for central banks and regulators in making monetary policy decisions. If the model indicates that the yield spread is widening and short-term interest rates are expected to rise, central banks may consider tightening monetary policy to control inflationary pressures. Conversely, a narrowing yield spread might suggest the need for looser monetary policy to stimulate economic growth.  
 - *Financial Stability:* The CP model's insights can help regulators assess financial stability and systemic risks. By monitoring the yield spread and its relationship with short-term interest rates, regulators can gain insights into the market's expectations and potential vulnerabilities. A widening yield spread, for example, could signal market concerns about future economic conditions or liquidity risks.
 
-# References
+## References
 
 Brooks, J., & Moskowitz, T. J. (2017). Yield curve premia. Working Paper.
 
@@ -633,5 +635,5 @@ Institute for Finance, Banking; Insurance; Wirtschaftsuniversität Wien.
 
 Thornton, D. L., & Valente, G. (2012). Out-of-sample predictions of bond excess returns and forward rates: An asset allocation perspective. Review of Financial Studies, 25, 3141–3168.
 
-# Authors
+## Authors
 Sebastian Herzog, Peter Mikos, Marcell Tatar, Ema Vargova
