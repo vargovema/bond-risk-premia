@@ -347,7 +347,8 @@ Overall, one can say that the model by Cochrane & Piazzesi (2005) improves the F
 We again reproduce the analysis proposed by Cochrane & Piazzesi (2005) using more recent Fama-Bliss yield data from January 1964 to December 2022.
 
 <figcaption align = "center"><b>Figure 3: Regression coefficients of one-year excess returns on forward rates using the recent Fama-Bliss yields.</b></figcaption> 
-![Figure 3: Regression coefficients of one-year excess returns on forward rates using the recent Fama-Bliss yields.(out/reg_coeffs_3.png)
+
+![Figure 3: Regression coefficients of one-year excess returns on forward rates using the recent Fama-Bliss yields.](out/reg_coeffs_3.png)
 
 Based on Figure 3, it appears that the conclusions drawn by Cochrane & Piazzesi (2005) may not hold for more recent Famma-Bliss data. The observed coefficients of one-year excess returns on forward rates do not exhibit a distinct tent shape, particularly for forward rates spanning years three to five. Additionally, the coefficients appear to be smaller in magnitude when compared to those depicted in Figure 1.
 
