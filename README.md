@@ -1,5 +1,9 @@
 # Bond risk premia
 
+This project replicates Cochrane & Piazzesi (2005) to examine bond risk premia. The study reveals a single factor, derived from forward rates, that predicts excess returns for bonds with maturities from one to five years.
+
+We calculate key variables such as log-yields, forward rates, and excess returns, then perform regressions to forecast these returns. The analysis includes both unrestricted and restricted models, comparing results with the Fama & Bliss (1987) model.
+
 ## Reproducing results by Cochrane & Piazzesi (2005)
 
 The research of Cochrane & Piazzesi (2005) focuses on examining the changing patterns of expected excess bond returns over time. To investigate this, they perform regressions where we analyze the relationship between one-year excess returns and initial forward rates. The findings reveal that a single factor, represented by a tent-shaped linear combination of forward rates, effectively predicts excess returns across one-year to five-year maturity bonds.
